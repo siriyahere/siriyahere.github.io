@@ -1,5 +1,5 @@
 body{
-	background:blue url(images/body-bg.png);
+	background:blue url(images/page-bg.png);
 	margin:0px;
 	font: 400 12px/22px 'Open Sans', Verdana, Helvetica, sans-serif;
 	color:#6a6969;
@@ -61,12 +61,12 @@ a img{border:0px;}
 	height:26px; 
 	background:url(images/sm-facebook-icon.png) no-repeat;
 }
-#about #top-social .twitter{
+#about #top-social .github{
 	text-indent:-9999px; 
 	display:block; 
 	width:31px; 
 	height:24px; 
-	background:url(images/sm-twitter-icon.png) no-repeat;
+	background:url(images/sm-github-icon.png) no-repeat;
 }
 #about #top-social .linkedin{
 	text-indent:-9999px; 
@@ -91,6 +91,68 @@ a img{border:0px;}
 #about .content #service-icons li.services-mobile{background:url(images/icon-2.png) no-repeat;}
 #about .content #service-icons li.services-film{background:url(images/icon-3.png) no-repeat;}
 #about .content #service-icons li.services-photo{background:url(images/icon-4.png) no-repeat;}
+
+
+
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skillbar-bar:before {
+    background: #eee;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.skillbar-bar {
+    height: 3px;
+    width: 0px;
+    background: skyblue;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    color: darkblue;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: aqua;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* CENTERING ONLY */
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/****************************************************/
+/* SKILLS SECTION */
+/****************************************************/
+
+#skills{margin:0px 43px; padding-top:115px;}
+#skills .col{
+	width:235px;
+	float:left;
+}
+#skills .content{overflow:auto;}
+#skills .col-mid{margin:0px 65px;}
 
 /****************************************************/
 /* EXPERIENCE SECTION */
@@ -138,7 +200,7 @@ a img{border:0px;}
 	float:left;
 	width:255px;
 	border:0px;
-	color:#3b3b3b;
+	color:darkcyan;
 	padding:10px 10px 10px 30px;
 	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
 	margin-bottom:10px;
@@ -150,12 +212,12 @@ a img{border:0px;}
 	height:100px;
 	padding:10px 10px 10px 30px;
 	font: 400 11px/20px 'Open Sans', Verdana, Helvetica, sans-serif;
-	color:#3b3b3b;
+	color:darkcyan;
 }
 
-#connect #form input.name{background:#222222 url(images/icon-user.png) no-repeat 10px 8px;}
-#connect #form input.email{background:#222222 url(images/icon-mail.png) no-repeat 10px 9px;}
-#connect #form textarea.message{background:#222222 url(images/icon-message.png) no-repeat 10px 8px;}
+#connect #form input.name{background:lightyellow url(images/icon-user.png) no-repeat 10px 8px;}
+#connect #form input.email{background:lightyellow url(images/icon-mail.png) no-repeat 10px 9px;}
+#connect #form textarea.message{background:lightyellow url(images/icon-message.png) no-repeat 10px 8px;}
 #connect #form input.submit{ 
 	width:75px;   
 	height:30px;
@@ -163,7 +225,7 @@ a img{border:0px;}
 	padding:0px 0px 5px 0px;
 	margin:10px 16px 0px 0px;
 	background:#222222;
-	color:#3b3b3b;
+	color:darkslateblue;
 	font: 400 14px/16px 'Bree Serif', Georgia, serif;
 }
 
@@ -191,6 +253,8 @@ a img{border:0px;}
 #connect #social-footer #sm-links li a.google{background:url(images/sm-google-icon.png) no-repeat;}
 #connect #social-footer #sm-links li a.youtube{background:url(images/sm-youtube-icon.png) no-repeat; width:28px;}
 #connect #social-footer #sm-links li a.linkedin{background:url(images/sm-linkedin-icon.png) no-repeat;}
+#connect #social-footer #sm-links li a.github{background:url(images/sm-github-icon.png) no-repeat;}
+
 
 /****************************************************/
 /* MISC */
